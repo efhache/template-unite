@@ -1,4 +1,4 @@
-﻿ <?php
+ <?php
  /**
  * The template for displaying the footer
  *
@@ -14,17 +14,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="text-center">L’unité fictive Sainte-Anne est membre de <a href="https://lesscouts.be/">Les Scouts ASBL</a></p>
+                        <p class="text-center">L’unité Les Belles Pierres (41ème unité du Roman Païs - RP041) est membre de <a href="https://lesscouts.be/">Les Scouts ASBL</a></p>
                     </div>
-                    <div class="col-md-3">
-                        <a href="https://lesscouts.be/">
-                            <img src="wp-content/themes/scout_template/images/logos/logo_Federation_blanc_159x61.png" alt="Les Scouts asbl" class="img-fluid">
-                        </a>
-                    </div>
+                    
                     <div class="col-md-3">
                          <?php dynamic_sidebar( 'footer_area_one' ); ?>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                          <?php dynamic_sidebar( 'footer_area_two' ); ?>
                     </div>
                     <div class="col-md-3">
@@ -38,8 +34,11 @@
                 <div class="col py-3">
                     <p class="text-center text-ls-gris">
                         &copy; Les Scouts asbl -
-                        <a href="https://lesscouts.be/mentions-legales/">Mentions légales</a> -
-                        <a href="https://lesscouts.be/vie-privee/">Vie privée</a>
+                        <a href="https://lesscouts.be/mentions-legales/" target="_blank">Mentions légales</a> -
+                        <a href="https://lesscouts.be/vie-privee/" target="_blank">Vie privée</a>
+						<small> 
+							Adaptation et intégration WordPress : <a href="https://www.hiernaux.be" target="_blank"> Fabian Hiernaux</a>
+						</small>
                     </p>
                 </div>
             </div>
@@ -48,5 +47,6 @@
 
     <!-- Ici, on inclut le Javascript de Bootstrap depuis un CDN mais tu peux tout à fait l’inclure depuis une autre source -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<?php wp_footer(); ?>
 </body>
 </html>
