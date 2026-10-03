@@ -1,0 +1,23 @@
+/*this file is note really used... it's just for memory
+*
+*/
+
+<div class="row mt-5">
+                <div class="col">
+                    <h2>informations pratiques</h2>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-6" >
+                    
+					<?php dynamic_sidebar( 'homepage_area_one' ); ?>
+                    <p class="text-end">
+                        <a href="#" class="fw-bold">Itinéraire <i class="bi-chevron-right"></i></a>
+                    </p>
+                </div>
+                <div class="col-md-5 offset-md-1">
+				
+				<?php dynamic_sidebar( 'homepage_area_two' ); ?>
+                    
+                </div>
+            </div>
