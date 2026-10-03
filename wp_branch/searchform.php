@@ -1,9 +1,16 @@
-<form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url( '/' ); ?>">
-    <div>
-        <label class="screen-reader-text" for="s">Recherche:</label>
-        <input value="" name="s" id="s" type="text" placeholder="Rechercher...">
-        
-		<button type="submit" class="btn btn-primary s_btn-primary"><i class="bi bi-search"></i></button>
-
-    </div>
-</form>
+<?php
+/**
+* Sidebar template
+*
+* Displays the main sidebar widget area.
+*
+* @package scout_unite_template
+*/
+if ( is_active_sidebar( 'main_sidebar' ) ) :
+?>
+ 
+<div class="sidebar">
+<?php dynamic_sidebar( 'main_sidebar' ); ?>
+</div>
+ 
+<?php endif; ?>
