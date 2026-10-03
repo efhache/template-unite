@@ -15,12 +15,10 @@ get_header(); ?>
             <div class="container">
                 <div class="row topping-federation topping-white topping-bottom-overflow topping-right topping-large bg-topping-opacity-30">
                     <div class="col-11 offset-md-1 pb-5 mt-5">
-                        <h1 class="mb-4 mt-5"><?php bloginfo( 'name' ); ?></h1>
+                        <h1 class="mb-4 mt-5">Les dernières nouvelles de l'Unite <?php bloginfo( 'name' ); ?></h1>
 						
                         <div class="pb-5">
-                            <p>Bienvenue sur le site de l'unité "<?php bloginfo( 'name' ); ?>".<br>
-                                Nous avons créé ce site dans le but de promouvoir le lien entre les staffs d’unité, les animateurs, les animés et leurs parents. <br>
-								Vous y trouverez toutes les informations utiles au bon déroulement des animations, des hikes et des camps de chacune de nos sections qui accueillent vos enfants
+                            <p>Cette page rassemble les nouvelles publiées par les staffs et l'équipe d'unité : récits d'aventures, préparatifs des projets, annonces, photos, moments marquants des sections, événements à venir, informations pratiques et tout ce qui fait battre le cœur de notre vie scoute. Tout ça tant pour les animés et que pour leurs familles.
 								</p>
                         </div>
                     </div>
@@ -92,25 +90,7 @@ get_header(); ?>
 				<?php endif; ?>
             </div>
             
-            <div class="row mt-5">
-                <div class="col">
-                    <h2>informations pratiques</h2>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6" >
-                    
-					<?php dynamic_sidebar( 'homepage_area_one' ); ?>
-                    <p class="text-end">
-                        <a href="#" class="fw-bold">Itinéraire <i class="bi-chevron-right"></i></a>
-                    </p>
-                </div>
-                <div class="col-md-5 offset-md-1">
-				
-				<?php dynamic_sidebar( 'homepage_area_two' ); ?>
-                    
-                </div>
-            </div>
+            
         </div>
     </article>
 <?php get_footer(); ?>
