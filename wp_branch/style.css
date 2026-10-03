@@ -1,4 +1,4 @@
-﻿/*
+/*
 Theme Name: scout_unite_template
 Theme URI: https://github.com/fhiernaux/template-unite
 Author: Fabian Hiernaux, based on Christian Mattart html template
@@ -22,6 +22,7 @@ comments : Feuilles de styles CSS compilées à partir des feuilles de styles sp
 .header-search {
     float: right;
 }
+
  
 .scout-unite-main-menu{
  margin-top: 10px;
@@ -36,10 +37,10 @@ margin-bottom: 0 !important;
 
 }
 
-.scout-unite-main-menu li{
- display: inline;
+.scout-unite-main-menu > li{
+ display:inline-block;
  /*padding: 10px 10px 0 10px;*/
-   padding-right: 1rem !important;
+  padding-right: 1rem !important;
   padding-left: 1rem !important;
 
 }
@@ -47,15 +48,16 @@ margin-bottom: 0 !important;
 
 .scout-unite-main-menu li a:hover, a:active {
  text-decoration: none; 
- color: #95C11F;
+ color: var(--bs-ls-vert-base);
 }
 
 .sub-menu{
 display:none;
-box-shadow: 0px 1px 2px #CCC;
+box-shadow: 0 8px 24px rgba(0,0,0,.12);
 background-color: white;
 position : absolute;
-width: 25%;
+min-width:250px;
+width:auto;
 z-index:1000;
 }
 
@@ -72,20 +74,42 @@ z-index:1000;
 }
 
 .sub-menu li{
-    float: none;
-    width: 25%;
-    text-align: left;
+display:block;
+float:none;
+width:100%;
+text-align:left;
 }
 .sub-menu li a{
     padding: 10px;
     border-bottom: none;
+	display:block;
+line-height:1.2;
 }
 .sub-menu li a:hover{
 	border-bottom: none;
     background-color: RGBa(200,200,200,0.1);
 }
-.scout-unite-main-menu > li:hover .sub-menu{
+.scout-unite-main-menu li:hover > .sub-menu{
 display:block;
+}
+.scout-unite-main-menu li {
+position: relative;
+}
+ 
+.scout-unite-main-menu .sub-menu .sub-menu {
+position: absolute;
+left: calc(100% + 2px);
+top: -1px;
+display: none;
+background: white;
+min-width: 250px;
+z-index: 9999;
+}
+
+.scout-unite-main-menu .sub-menu > li > .sub-menu {
+left: calc(100% + 2px) !important;
+top: -1px;
+margin-left: 0 !important;
 }
 
 .menu-item-has-children > a::after{
@@ -95,11 +119,17 @@ display:block;
 
 
 .sc_bgcolor_thumbnails{
-background-color: #95C11F;
+background-color: var(--bs-ls-vert-base);
 }
 
 .sc_img_thumbnails{
   padding: 10px;
+}
+
+.sc_img_thumbnails img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
 }
 
 .sc_img_thumbnails_position{
@@ -124,7 +154,7 @@ margin-right: auto;
 }
 
 .homepage-area-one{
-background-color:#95C11F;
+background-color:var(--bs-ls-vert-base);
 padding:20px;
 width:100%;
 height:430px;
@@ -136,7 +166,7 @@ border-radius: 8px;
 }
 
 #searchsubmit {
-    background-color: #00a0d2;
+    background-color: var(--bs-ls_bleu_clair);
     color: white;
     padding: 5px 8px;
     font-size: 15px;
@@ -146,7 +176,7 @@ border-radius: 8px;
 }
 
 #s {
-    height: 18px;
+    height: 36px;
     padding: 5px 8px;
     font-size: 15px;
     line-height: 1.1;
@@ -156,7 +186,7 @@ border-radius: 8px;
 
 .s_btn-primary{
   color: #fff;
-  background-color: #304a3c;
+  background-color: var(--bs-ls-vert-fonce);
   border-color: #304a3c;
 }
 .s_btn-primary:hover{
@@ -165,4 +195,205 @@ border-radius: 8px;
   border-color: #304a3c;
 }
 
+.sidebar {
+padding-left:20px;
+}
+ 
+.sidebar-widget {
+background:white;
+padding:15px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
 
+.sidebar-widget a{
+text-decoration:none;
+}
+ 
+.sidebar-widget a:hover{
+text-decoration:none;
+}
+
+.sidebar-widget ul{
+    list-style:none;
+    padding-left:0;
+    margin-left:0;
+}
+
+.sidebar-widget li{
+    margin-bottom:4px;
+}
+
+.sidebar-widget li a{
+    display:block;
+    padding:8px 12px;
+
+    border-radius:6px;
+
+    text-decoration:none;
+    font-weight:600;
+
+    color:var(--bs-ls-bleu-fonce);
+
+    transition:all .2s ease;
+}
+
+.sidebar-widget li a:hover{
+    background-color:var(--bs-ls-vert-base);
+    color:white;
+}
+
+.sidebar-widget h2,
+.sidebar-widget h3,
+.sidebar-widget h4{
+border-bottom:2px solid var(--bs-ls-vert-base);
+padding-bottom:8px;
+margin-bottom:12px;
+}
+
+.sidebar-widget p{
+    margin-bottom:6px;
+}
+
+.sidebar-widget p a{
+    display:flex;
+    padding:8px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    color:var(--bs-ls-bleu-fonce);
+    transition:all .2s ease;
+	align-items:center;
+	gap:10px;
+}
+
+.sidebar-widget p a:hover{
+    background-color:var(--bs-ls-vert-base);
+    color:white;
+}
+
+.test-couleur-theme {
+background-color: var(--bs-ls-vert-base);
+color: white;
+padding: 20px;
+}
+
+h1,
+.h1{
+font-family: var(--bs-font-secondaire-1, Housepaint, sans-serif);
+}
+
+h2,
+.h2{
+font-family: Mali-Bold,sans-serif;
+}
+
+.scout-accent{
+font-family:CaveatBrush,sans-serif;
+}
+
+.page-title{
+font-size: clamp(2.6rem, 5vw, 3.8rem);
+line-height: 1.15;
+}
+
+.sc-news-button{
+display:inline-flex;
+align-items:center;
+gap:8px;
+margin-left:20px;
+padding:8px 16px;
+background-color:var(--bs-ls-vert-base) !important;
+color:white;
+border-radius:6px;
+text-decoration:none;
+font-weight:700;
+transition:all .2s ease;
+}
+ 
+.sc-news-button:hover{
+background-color:var(--bs-ls-vert-fonce);
+color:white;
+}
+ 
+.sc-news-button i{
+font-size:1rem;
+}
+
+.header-top-right{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:20px;
+}
+
+.social-links{
+    display:flex;
+    gap:12px;
+}
+
+.social-links a{
+    color:white;
+    font-size:1.4rem;
+    text-decoration:none;
+    transition:.2s;
+}
+
+.social-links a:hover{
+    color:var(--bs-ls-vert-base);
+}
+
+.sc-highlight-box{
+    background-color:#f8f9fa;
+    border-left:6px solid var(--bs-ls-vert-base);
+    padding:20px;
+    margin:20px 0;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.sc-highlight-box-blue{
+    background:#f8f9fa;
+    border-top:5px solid var(--bs-ls-bleu-fonce);
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.sc-highlight-box-callout{
+    background:rgba(149,193,31,.08);
+    border-left:6px solid var(--bs-ls-vert-base);
+    padding:20px;
+    border-radius:10px;
+}
+
+.sc-highlight-box-callout-blue{
+    background:#eef5fb;
+    border-left:6px solid var(--bs-ls-bleu-fonce);
+    padding:20px;
+    border-radius:10px;
+	box-shadow:0 2px 8px rgba(0,0,0,.05);
+    margin-bottom:30px;
+}
+
+.sc-highlight-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid rgba(0,0,0,.08);
+    box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+.sc-highlight-box a{
+    font-weight:700;
+    color:var(--bs-ls-bleu-fonce);
+    text-decoration:none;
+}
+
+.sc-highlight-box a:hover{
+    color:var(--bs-ls-vert-base);
+}
+
+.sc-highlight-link::after{
+    content:" ›";
+    font-weight:bold;
+}
