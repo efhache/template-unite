@@ -18,6 +18,31 @@ L'objectif est de permettre à une unité scoute de déployer rapidement un site
 Ce projet est actuellement utilisé par l'Unité Les Belles Pierres (RP041).
 
 ---
+## Aperçu
+
+<table>
+  <tr>
+    <td align="center">
+      <strong>Page d'accueil</strong><br>
+      <img width="1895" height="937" alt="homepage_scouts" src="https://github.com/user-attachments/assets/d0d2e0c4-aaee-446f-9bc2-a173cac9ac99" />
+    </td>
+    <td align="center">
+      <strong>Blog / Actualités</strong><br>
+      <img width="1632" height="923" alt="news_scouts" src="https://github.com/user-attachments/assets/be4dee36-56f1-43b3-a3ee-8aa708c951d0" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>Archive de catégorie</strong><br>
+      <img width="1895" height="935" alt="categorie_scouts" src="https://github.com/user-attachments/assets/ea760bf0-a66f-464b-82d5-224763ad3572" />
+    </td>
+    <td align="center">
+      <strong>Article individuel</strong><br>
+      <img width="1896" height="936" alt="contentpage_scouts" src="https://github.com/user-attachments/assets/f84c4d8b-5ecc-4b8b-8fc1-f63ec9862804" />
+    </td>
+  </tr>
+</table>
+---
 
 ## Crédits
 
