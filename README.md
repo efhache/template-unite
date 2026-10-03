@@ -87,7 +87,7 @@ https://www.hiernaux.be
 
 ### Installation du thème
 
-Copiez le dossier du thème dans :
+Copiez le dossier du thème (uniquement ce qui est sous wp_branch) dans :
 
 ```text
 wp-content/themes/
