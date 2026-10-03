@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * The header for our theme
  *
@@ -19,6 +19,7 @@
     <!--<link href="wp-content/themes/scout_template/style.css" rel="stylesheet">-->
 	<link href="<?php echo get_theme_file_uri('style.css'); ?>" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+	<?php wp_head(); ?>
 </head>
 <body>
     <header>
@@ -27,12 +28,19 @@
                 <div class="col">
 				
                     <div class="m-2">
-                        <a href="https://lesscouts.be/" target="_blank" title="Aller sur le site de la fédération Les Scouts">
-                            <i class="bi-chevron-left"></i> Les Scouts asbl
-                        </a>
-					 <div class="header-search">
-			<?php get_search_form(); ?>
-        </div>
+						<div class="header-top-right">
+							<div class="social-links">
+								<a href="https://www.facebook.com/profile.php?id=100064931370206"
+										 <i class="bi bi-facebook"></i>
+								</a>
+							</div>
+
+    <div class="header-search">
+        <?php get_search_form(); ?>
+    </div>
+
+</div>
+					 
                     </div>
 					
 					        
@@ -78,6 +86,10 @@
 						 )
 						);
 						?>
+					<a href="<?php echo site_url('/dernieres-nouvelles'); ?>" class="sc-news-button">
+<i class="bi bi-newspaper"></i>
+Dernières nouvelles
+</a>
 					</div>
 				</div>
             </nav>
